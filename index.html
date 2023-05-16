@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+
+<!-- INICIO -->
+<section id="inicio">
+
+    <div class="contenido">
+
+        <header>
+            <div class="contenido-header">
+                <h1> < / CM > </h1>
+                <nav id="nav" class="">
+
+                    <ul id="links">
+
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+
+                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+
+                        <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES</a></li>
+
+                        <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                    </ul>
+
+                </nav>
+
+             <!-- ICONOS DE MENU RESPOSIVO -->
+
+             <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+             </div>
+
+            </div>
+        </header>
+
+        <div class="presentacion">
+            <p class="bienvenidos">
+                Bienvenidos
+            </p>
+
+            <h2>Soy <span>Camilo Marquez</span>, Desarrollador Web</h2>
+            <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus suscipit exercitationem impedit, minima dolores veniam amet cum, reiciendis assumenda architecto aut blanditiis explicabo autem ex id, similique perferendis officiis?</p>
+
+            <a href="#portafolio">Ir a portafolio</a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- FIN INICIO -->
+
+<!-- SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="perfil.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo">
+                 Sobre mi
+            </p>
+            <h2>Hola, soy <span>Camilo Marquez</span> </h2>
+            <h3>Desarrollador web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae iure aliquid, repudiandae voluptas consequatur Provident vel temporibus non delectus maxime, reprehenderit in!</p>
+            <a href="#">Descargar CV</a>
+
+        </div>
+    </section>
+<!-- FIN SOBRE MI -->
+
+<!-- HABILIDADES -->
+<div class="contenedor-skills" id="skills">
+
+    <h3>Habilidades</h3>
+    <div class="skills">
+        <div class="info">
+            <p><span class="lista"></span>Html & Css</p>
+            <span class="porcentaje">80%</span>
+        </div>
+
+        <div class="barra">
+            <div id="html" class=""></div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="info">
+            <p><span class="lista"></span>Js</p>
+            <span class="porcentaje">60%</span>
+        </div>
+
+        <div class="barra">
+            <div id="js" class=""></div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="info">
+            <p><span class="lista"></span>Bases de datos</p>
+            <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+            <div id="bd" class=""></div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="info">
+            <p><span class="lista"></span>Php & laravel</p>
+            <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+            <div id="php" class=""></div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="info">
+            <p><span class="lista"></span>TailwindCss & Bootstrap</p>
+            <span class="porcentaje">80%</span>
+        </div>
+
+        <div class="barra">
+            <div id="tailwind" class=""></div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="info">
+            <p><span class="lista"></span>Angular</p>
+            <span class="porcentaje">70%</span>
+        </div>
+
+        <div class="barra">
+            <div id="angular" class=""></div>
+        </div>
+    </div>
+
+</div>
+<!-- FIN HABILIDADES -->
+
+<!-- SECCION PORTAFOLIO -->
+
+<section id="portafolio">
+
+    <h3 class="titulo-seccion">Mis proyectos</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+                <img src="perfil.jpg" alt="">
+
+                <div class="infor">
+                    <h4>Descripcion del proyecto</h4>
+                </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+                <img src="perfil.jpg" alt="">
+
+                <div class="infor">
+                    <h4>Descripcion del proyecto</h4>
+                </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+                <img src="perfil.jpg" alt="">
+
+                <div class="infor">
+                    <h4>Descripcion del proyecto</h4>
+                </div>
+        </div>
+
+    </div>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+                <img src="perfil.jpg" alt="">
+
+                <div class="infor">
+                    <h4>Descripcion del proyecto</h4>
+                </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+                <img src="perfil.jpg" alt="">
+
+                <div class="infor">
+                    <h4>Descripcion del proyecto</h4>
+                </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+                <img src="perfil.jpg" alt="">
+
+                <div class="infor">
+                    <h4>Descripcion del proyecto</h4>
+                </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- FIN SECCiON PORTAFOLIO -->
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
