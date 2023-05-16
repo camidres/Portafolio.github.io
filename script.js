@@ -1,51 +1,21 @@
-function seleccionar(link){
+let entrada = 1;
 
-    let opciones = document.querySelectorAll('#links a');
+function cambiar(link){
 
-    opciones[0].className = "";
-    opciones[1].className = "";
-    opciones[2].className = "";
-    opciones[3].className = "";
+    if(entrada==0){
 
-    link.className = "seleccionado";
+         document.getElementById("iniciar-sesion").className = "iniciar-sesion salir";
+         document.getElementById("crear-cuenta").className = "crear-cuenta mostrar";
 
-    let x = document.getElementById("nav");
-    x.className = "";
-    
-}
-
-
-function responsiveMenu(){
-
-    let x = document.getElementById("nav");
-
-    if(x.className===""){
-
-        x.className = "responsive";
-    }else{
-
-        x.className = "";
+         entrada = 1;
+         link.innerHTML = "Iniciar sesion";
     }
+    else{
+        
+        document.getElementById("iniciar-sesion").className = "crear-cuenta mostrar";
+        document.getElementById("crear-cuenta").className = "iniciar-sesion salir";
 
-}
-
-window.onscroll = function(){
-
-    efectoHabilidades()
-};
-
-function efectoHabilidades(){
-
-    let skills = document.getElementById("skills");
-    let distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >=300){
-
-        document.getElementById("html").classList.add("barra-progreso1");
-        document.getElementById("js").classList.add("barra-progreso2");
-        document.getElementById("bd").classList.add("barra-progreso3");
-        document.getElementById("php").classList.add("barra-progreso4");
-        document.getElementById("tailwind").classList.add("barra-progreso5");
-        document.getElementById("angular").classList.add("barra-progreso6");
-
+        entrada = 0;
+        link.innerHTML = "Crear cuenta";
     }
 }
